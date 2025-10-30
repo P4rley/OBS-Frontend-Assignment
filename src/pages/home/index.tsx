@@ -71,7 +71,7 @@ const Home = () => {
 
       dispatch(
         createUser({
-          id: users.length + 1,
+          id: users.length + 2,
           name: newUser.name,
           email: newUser.email,
           username: newUser.username,
@@ -153,7 +153,7 @@ const Home = () => {
       )}
 
       <div className='container mx-auto p-10'>
-        <h1 className='text-3xl font-bold mb-10'>User Lists</h1>
+        <h1 className='text-3xl font-bold mb-10'>User Management</h1>
 
         <Dialog open={mutate} onOpenChange={onCloseMutateUser}>
           <form>
