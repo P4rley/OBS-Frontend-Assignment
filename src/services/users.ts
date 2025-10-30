@@ -1,4 +1,4 @@
-import api from "./HttpService";
+import api from './HttpService';
 
 export interface User {
   id: number;
@@ -9,5 +9,5 @@ export interface User {
 }
 
 export const userApi = {
-  getUsers: () => api.get<User[]>("/users"),
+  getUsers: () => api.get<User[]>('/users'),
 };
