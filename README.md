@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+# User Management Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive user management application built with React, TypeScript, and Vite. This application provides a complete CRUD (Create, Read, Update, Delete) interface for managing users with a clean and intuitive design.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Management**: Complete CRUD operations for users
+- **UI**: Built with Radix UI components and Tailwind CSS
+- **Responsive Design**: Mobile-first design that works on all devices
+- **State Management**: Redux for efficient state management
+- **Type Safety**: Full TypeScript support
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### Frontend
 
-## Expanding the ESLint configuration
+- **React 19** - Latest React version with modern features
+- **TypeScript** - Type-safe JavaScript
+- **Vite** - Fast build tool and development server
+- **Tailwind CSS** - Utility-first CSS framework
+- **Radix UI** - Accessible, unstyled UI components
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### State Management
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- **Redux** - React bindings for Redux
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### UI Components
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+- **Shadcn/UI** - Beautiful, reusable components built on Radix UI
+- **Lucide React** - Beautiful & consistent icon toolkit
+- **Tailwind CSS** - For styling and animations
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Development Tools
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x';
-import reactDom from 'eslint-plugin-react-dom';
+- **ESLint** - JavaScript/TypeScript linting
+- **Prettier** - Code formatting
+- **Vitest** - Unit testing framework
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-]);
-```
+## 📦 Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/P4rley/OBS-Frontend-Assignment.git
+   cd obs-frontend-assignment
+   ```
+
+2. **Install dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:5173`
+
+## 🎯 Available Scripts
+
+### Development
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+
+### Code Quality
+
+- `npm run lint` - Run ESLint to check for issues
+- `npm run format` - Format code with Prettier
+- `npm run format:check` - Check if code is properly formatted
+
+### Testing
+
+- `npm run test` - Run tests
