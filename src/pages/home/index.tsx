@@ -71,7 +71,7 @@ const Home = () => {
 
       dispatch(
         createUser({
-          id: users.length + 2,
+          id: Math.max(...users.map(item => item.id)) + 1,
           name: newUser.name,
           email: newUser.email,
           username: newUser.username,
